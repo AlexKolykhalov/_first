@@ -5,6 +5,7 @@
 /.venv
 /.vscode
 /__pycache__
+/logs
 
 # Packadges
 __pycache__
