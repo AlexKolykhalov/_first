@@ -1,4 +1,11 @@
+#Folders
 /.venv
 /__pycache__
 /.vscode
 /_first
+
+# Files
+*.pyc
+
+# Packadges
+__pycache__
