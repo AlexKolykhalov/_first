@@ -3,9 +3,8 @@
 
 #Folders
 /.venv
-/__pycache__
 /.vscode
-/_first
+/__pycache__
 
 # Packadges
 __pycache__
