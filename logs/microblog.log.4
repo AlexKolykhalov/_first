@@ -1,0 +1,223 @@
+2019-01-18 14:06:22,242 ERROR: Exception on /auth/login [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\auth\routes.py", line 27, in login
+    return render_template('auth/login.html', title=_('Sign in'), form=form)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 148, in template
+    {% endif% }
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\auth\login.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 148, in template
+    {% endif% }
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 888, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '%'
+2019-01-18 14:06:26,873 ERROR: Exception on /favicon.ico [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1791, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1774, in raise_routing_exception
+    raise request.routing_exception
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\ctx.py", line 336, in match_request
+    self.url_adapter.match(return_rule=True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\werkzeug\routing.py", line 1581, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server.  If you entered the URL manually please check your spelling and try again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1713, in handle_user_exception
+    return self.handle_http_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1644, in handle_http_exception
+    return handler(e)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\errors\handlers.py", line 8, in not_found_error
+    return render_template('errors/404.html'), 404
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 148, in template
+    {% endif% }
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 1005, in render
+    return concat(self.root_render_func(self.new_context(vars)))
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\errors\404.html", line 1, in top-level template code
+    {% extends 'base.html' %}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 148, in template
+    {% endif% }
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\parser.py", line 888, in subparse
+    self.stream.expect('block_end')
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\lexer.py", line 384, in expect
+    self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: expected token 'end of statement block', got '%'
+2019-01-18 14:07:36,238 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:114]
+2019-01-18 14:07:59,575 ERROR: Exception on /index [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 39, in index
+    return render_template('index.html', title=_('Home'), form=form, posts=posts.items, next_url=next_url, prev_url=prev_url)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 26, in block "body"
+    {% block scripts %}
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 138, in block "scripts"
+    $.ajax("{{ url_for('main.notification') }}?since=" + since).done(
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'main.notification'. Did you mean 'main.notifications' instead?
+2019-01-18 14:08:40,667 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:114]
+2019-01-18 14:08:55,009 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'

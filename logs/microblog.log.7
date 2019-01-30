@@ -1,0 +1,151 @@
+2019-01-14 08:10:31,417 ERROR: Exception on /login [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\routes.py", line 50, in login
+    return render_template('login.html', title='Sign in', form=form)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\login.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'base/index.html' %}
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 58, in get_source
+    return self._get_source_fast(environment, template)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\templating.py", line 86, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: base/index.html
+2019-01-14 08:10:57,669 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:90]
+2019-01-14 08:20:26,351 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:90]
+2019-01-14 09:46:33,777 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:90]
+2019-01-14 09:47:39,172 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:90]
+2019-01-14 09:47:49,731 INFO: Microblog startup [in c:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:90]
+2019-01-14 10:08:11,039 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:90]
+2019-01-14 10:43:26,433 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:14:07,109 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:14:16,044 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:15:08,459 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:16:18,379 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:17:15,530 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:18:03,495 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:18:42,424 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:38:40,556 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:41:52,128 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 11:56:32,662 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:01:26,258 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:01:33,712 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:36:12,875 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:45:14,233 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:49:51,373 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:52:22,086 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:53:27,813 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 12:53:56,459 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:00:18,923 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:00:42,444 ERROR: Exception on / [GET] [in c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask_login\utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask_login\login_manager.py", line 167, in unauthorized
+    flash(self.login_message, category=self.login_message_category)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\helpers.py", line 410, in flash
+    session['_flashes'] = flashes
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\werkzeug\local.py", line 350, in __setitem__
+    self._get_current_object()[key] = value
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\sessions.py", line 101, in _fail
+    raise RuntimeError('The session is unavailable because no secret '
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2019-01-14 13:01:13,285 ERROR: Exception on /index [GET] [in c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask_login\utils.py", line 260, in decorated_view
+    return current_app.login_manager.unauthorized()
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask_login\login_manager.py", line 167, in unauthorized
+    flash(self.login_message, category=self.login_message_category)
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\helpers.py", line 410, in flash
+    session['_flashes'] = flashes
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\werkzeug\local.py", line 350, in __setitem__
+    self._get_current_object()[key] = value
+  File "c:\users\asu7\.virtualenvs\microblog-pze2x5ce\lib\site-packages\flask\sessions.py", line 101, in _fail
+    raise RuntimeError('The session is unavailable because no secret '
+RuntimeError: The session is unavailable because no secret key was set.  Set the secret_key on the application to something unique and secret.
+2019-01-14 13:06:06,972 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:07:05,276 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:08:45,408 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:13:14,103 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:13:24,250 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:24:44,014 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:39:11,445 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 13:41:50,565 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:04:46,830 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:21:08,841 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:21:36,354 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:37:15,778 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:37:46,175 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:44:00,154 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:45:04,329 INFO: Microblog startup [in c:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:45:14,803 INFO: Microblog startup [in c:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:45:37,391 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 14:45:41,979 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:06:12,826 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:06:35,406 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:07:11,383 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:13:48,721 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:14:07,828 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:15:15,065 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:15:23,826 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:15:40,407 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:31:22,058 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:46:04,737 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 15:51:17,168 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:24:41,484 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:24:58,009 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:26:27,925 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:26:45,631 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:43:18,648 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:43:35,615 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:44:02,329 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-14 16:57:47,168 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]
+2019-01-15 08:46:16,654 INFO: Microblog startup [in C:\Users\asu7\Desktop\Py\apps\microblog\app\__init__.py:91]

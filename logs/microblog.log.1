@@ -1,0 +1,246 @@
+2019-01-18 14:10:05,006 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'
+2019-01-18 14:10:12,312 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'
+2019-01-18 14:10:15,006 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'
+2019-01-18 14:10:22,320 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'
+2019-01-18 14:10:24,990 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'
+2019-01-18 14:10:32,361 ERROR: Exception on /notifications [GET] [in C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 699, in __getattr__
+    return getattr(self.comparator, key)
+AttributeError: 'Comparator' object has no attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 222, in __getattr__
+    return getattr(self.comparator, key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\util\langhelpers.py", line 933, in __getattr__
+    return self._fallback_getattr(key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\properties.py", line 304, in _fallback_getattr
+    return getattr(self.__clause_element__(), key)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\sql\elements.py", line 703, in __getattr__
+    % (type(self).__name__, type(self.comparator).__name__, key)
+AttributeError: Neither 'AnnotatedColumn' object nor 'Comparator' object has an attribute 'acs'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "C:\Users\asu7\Desktop\Py\apps\microblog\app\main\routes.py", line 161, in notifications
+    notifications = current_user.notifications.filter(Notification.timestamp > since).order_by(Notification.timestamp.acs())
+  File "C:\Users\asu7\.virtualenvs\microblog-PZe2x5ce\lib\site-packages\sqlalchemy\orm\attributes.py", line 231, in __getattr__
+    key,
+AttributeError: Neither 'InstrumentedAttribute' object nor 'Comparator' object associated with Notification.timestamp has an attribute 'acs'
