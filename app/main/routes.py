@@ -182,4 +182,4 @@ def export_posts():
     else:
         current_user.launch_task('export_posts', 'Exporting posts...')
         db.session.commit()
-    return render_template(url_for('main.user', username=current_user.username))
+    return redirect(url_for('main.user', username=current_user.username))
