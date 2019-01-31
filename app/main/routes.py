@@ -174,7 +174,7 @@ def notifications():
     prev_url    = url_for('main.messages', page=messages.prev_num) if messages.has_prev else None
     return render_template('messages.html', messages=messages.items, next_url=next_url, prev_url=prev_url)
 
-@bp.route('export_posts')
+@bp.route('/export_posts')
 @login_required
 def export_posts():
     if current_user.get_task_in_progress('export_posts'):
