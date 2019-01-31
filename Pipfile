@@ -23,7 +23,6 @@ langdetect = "*"
 python-dotenv = "*"
 elasticsearch = "*"
 rq = "*"
-celery = "*"
 
 [requires]
 python_version = "3.7"

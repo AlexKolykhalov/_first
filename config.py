@@ -26,7 +26,6 @@ class Config(object):
     LANGUAGES = ['en', 'ru']
     MS_TRANSLATOR_KEY = 'trnsl.1.1.20190115T060601Z.ec80cbb4e9456b34.c02d70d921ada6b08db8131853c37515a40c3923'
     # search
-    ELASTICSEARCH_URL = 'http://localhost:9200'
-    # celery
-    CELERY_BROKER_URL = 'redis://localhost:6379/0'
-    CELERY_RESULT_BACKEND = 'redis://localhost:6379/0' 
+    ELASTICSEARCH_URL = 'http://localhost:9200'    
+    # redis
+    REDIS_URL = os.environ.get('REDIS_URL') or 'redis://'

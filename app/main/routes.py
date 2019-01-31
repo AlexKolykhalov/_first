@@ -172,4 +172,14 @@ def notifications():
         Message.timestamp.desc()).paginate(page, current_app.config['POST_PER_PAGE'], False)
     next_url    = url_for('main.messages', page=messages.next_num) if messages.has_next else None
     prev_url    = url_for('main.messages', page=messages.prev_num) if messages.has_prev else None
-    return render_template('messages.html', messages=messages.items, next_url=next_url, prev_url=prev_url)    
+    return render_template('messages.html', messages=messages.items, next_url=next_url, prev_url=prev_url)
+
+@bp.route('export_posts')
+@login_required
+def export_posts():
+    if current_user.get_task_in_progress('export_posts'):
+        flash('An export task is currently in progress')        
+    else:
+        current_user.launch_task('export_posts', 'Exporting posts...')
+        db.session.commit()
+    return render_template(url_for('main.user', username=current_user.username))
