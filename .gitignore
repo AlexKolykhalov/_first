@@ -3,6 +3,7 @@
 *.pyc
 *.db
 /logs
+/versions
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
