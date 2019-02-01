@@ -23,6 +23,7 @@ langdetect = "*"
 python-dotenv = "*"
 elasticsearch = "*"
 rq = "*"
+flask-httpauth = "*"
 
 [requires]
 python_version = "3.7"
