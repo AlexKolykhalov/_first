@@ -220,7 +220,7 @@ class User(PaginateAPIMixin, UserMixin, db.Model):
             return None
         return user
 
-class Post(SearchableMixin, db.Model):
+class Post(PaginateAPIMixin, SearchableMixin, db.Model):
     __searchable__ = ['body']
 
     id          = db.Column(db.Integer, primary_key=True)
@@ -231,6 +231,21 @@ class Post(SearchableMixin, db.Model):
 
     def __repr__(self):
         return '<Post {}>'.format(self.body)
+
+    # api
+    def to_dict(self, include_email=False):
+        data = {
+            'id':               self.id,
+            'body':             self.body,
+            'timestamp':        self.timestamp.isoformat() + 'Z',
+            'language':         self.language,            
+            '_links': {
+                'user': url_for('api.get_user', id=self.user_id),
+                'user_followers': url_for('api.get_followers', id=self.user_id),
+                'user_followed': url_for('api.get_followed', id=self.user_id)                
+            }
+        }
+        return data
 
 class Message(db.Model):
     id              = db.Column(db.Integer, primary_key=True)
