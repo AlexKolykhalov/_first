@@ -158,10 +158,8 @@
                                     case 'task_progress':
                                         set_task_progress(notification[i].data.task_id, notification[i].data.progress);
                                         break;
-                                }
-                                set_message_count(notification[i].data);
-                            
-                            since = notification[i].timestamp;
+                                }                            
+                                since = notification[i].timestamp;
                             }
                         }
                     );
